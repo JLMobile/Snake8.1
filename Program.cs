@@ -13,7 +13,7 @@ using System.Reflection;
 
 namespace Snake
 {
-    
+    //Define a struct for the position of the snake and other objects.
     struct Position
     {
         public int row;
