@@ -208,7 +208,7 @@ namespace Snake
                 Console.WriteLine("\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "Game Over!");
                 int userPoints = (snakeElements.Count);    //points calculated for player
                                                                // userPoints = Math.Max(userPoints, 0);
-                Console.WriteLine("\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "Your points are: {0}", userPoints);
+                Console.WriteLine("\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "Your points are: {0}", userPoints); // to view the user point
                 Console.Write("\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "Please enter your name: ");
                 string user_name = Console.ReadLine();
                 SaveFile(userPoints, user_name);//keeps the points and username is SaveFile to be written in to file
@@ -241,7 +241,7 @@ namespace Snake
             }
         }
 
-        class Scoreboard
+        class Scoreboard //player score board
         {
             public static int Row1;
             public static int Col1;
